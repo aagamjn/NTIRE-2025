@@ -18,7 +18,7 @@
 ## Model Result On DIV2K
     # you can check the model output on DIV2K test dataset :
     `!pip install gdown`
-    `https://drive.google.com/file/d/1KJ6_HhnLZuImIANYFJDiiYoyH4AoqANr/view?usp=drivesdk`
+    `gdown https://drive.google.com/file/d/1KJ6_HhnLZuImIANYFJDiiYoyH4AoqANr/view?usp=drivesdk`
     
 ## How to eval images using IQA metrics?
 
