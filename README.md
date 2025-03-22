@@ -11,12 +11,12 @@
     - You can use either `--valid_dir`, or `--test_dir`, or both of them. Be sure the change the directories `--valid_dir`/`--test_dir` and `--save_dir`.
    
 ## Model Pretrained Weights
-    - you can use our model pretrain weights from this:
+     # you can use our model pretrain weights from this:
     `pip install gdown`
     `gdown https://drive.google.com/file/d/1qtezABZb6xPB99S2qx9mU7tqP9C7CqJZ/view
 
 ## Model Result On DIV2K
-    - you can check the model output on DIV2K test dataset :
+    # you can check the model output on DIV2K test dataset :
     `!pip install gdown`
     `https://drive.google.com/file/d/1KJ6_HhnLZuImIANYFJDiiYoyH4AoqANr/view?usp=drivesdk`
     
