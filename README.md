@@ -4,7 +4,17 @@
 
 1. `git clone https://github.com/aagamjn/NTIRE-2025`
 2. `pip install -r [path to requirements.txt]`
-3. Run this code to test the model:
+3.  download pretrained weights as told in the below section , ensure it is in proper directory NTIRE-2025/model_zoo/team22_HAT.pth
+4.  ensure that you are in correct directory /NTIRE-2025 before running
+   ```
+    import os
+    # Change working directory to NTIRE-2025
+    os.chdir("./NTIRE-2025")
+    # Verify current directory
+    print("Current Directory:", os.getcwd())
+   ```
+    
+5. Run this code to test the model:
     ```bash
     CUDA_VISIBLE_DEVICES=0 python [ path to test.py] --valid_dir [path to val data dir] --test_dir [path to test data dir] --save_dir [path to your save dir] --model_id 0
     ```
@@ -12,13 +22,24 @@
    
 ## Model Pretrained Weights
      # you can use our model pretrain weights from this:
-    `pip install gdown`
-    `gdown https://drive.google.com/file/d/1qtezABZb6xPB99S2qx9mU7tqP9C7CqJZ/view
+ ```bash
+!pip install gdown  # Ensure gdown is installed
 
+
+import gdown
+
+# Google Drive file ID (extracted from the link)
+file_id = "1qtezABZb6xPB99S2qx9mU7tqP9C7CqJZ"
+output_name = "team22_HAT.pth"  # Change to desired filename
+
+# Download the file
+gdown.download(f"https://drive.google.com/uc?id={file_id}", output_name, quiet=False)
+```
 ## Model Result On DIV2K
     # you can check the model output on DIV2K test dataset :
     `!pip install gdown`
-    `gdown https://drive.google.com/file/d/1KJ6_HhnLZuImIANYFJDiiYoyH4AoqANr/view?usp=drivesdk`
+    `!gdown --id 1KJ6_HhnLZuImIANYFJDiiYoyH4AoqANr`
+
     
 ## How to eval images using IQA metrics?
 
