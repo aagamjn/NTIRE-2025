@@ -21,10 +21,10 @@
     - You can use either `--valid_dir`, or `--test_dir`, or both of them. Be sure the change the directories `--valid_dir`/`--test_dir` and `--save_dir`.
    
 ## Model Pretrained Weights
-     # you can use our model pretrain weights from this:
+   # you can use our model pretrain weights from this:
  ```bash
 !pip install gdown  # Ensure gdown is installed
-
+# IF IT THROWS ERROR OF NOT INSTALLING , SEPARATELY INSTALL gdown then run the below
 
 import gdown
 
@@ -35,6 +35,7 @@ output_name = "team22_HAT.pth"  # Change to desired filename
 # Download the file
 gdown.download(f"https://drive.google.com/uc?id={file_id}", output_name, quiet=False)
 ```
+
 ## Model Result On DIV2K
     # you can check the model output on DIV2K test dataset :
     `!pip install gdown`
